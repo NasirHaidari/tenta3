@@ -2,7 +2,7 @@ import React from 'react'
 
 const Meal = (props) => {
   const meal = props.meal
-  console.log(meal)
+
   return (
     <div className='search-result col-lg-3 col-md-4 col-sm-6'>
       <div className='card bg-dark text-white mb-4'>
@@ -16,14 +16,16 @@ const Meal = (props) => {
             target='_blank'
             rel='noopener noreferrer'>
             Recipe &raquo;
-          </a>{' '}
-          <a
-            href={meal.strYoutube}
-            className='btn btn-danger'
-            target='_blank'
-            rel='noopener noreferrer'>
-            youtube &raquo;
           </a>
+          {meal.strYoutube && (
+            <a
+              href={meal.strYoutube}
+              className='btn btn-danger'
+              target='_blank'
+              rel='noopener noreferrer'>
+              youtube &raquo;
+            </a>
+          )}
         </div>
       </div>
     </div>
