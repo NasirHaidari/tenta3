@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background-color: black;
+  color: blanchedalmond;
+}
+@import;
